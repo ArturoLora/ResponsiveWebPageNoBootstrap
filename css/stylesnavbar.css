@@ -1,0 +1,160 @@
+.burguer-icon {
+ background-color: transparent;
+ border: none;
+ height: 30px;
+ width: 30px;
+}
+.burguer-icon img {
+    height: 100%;
+}
+
+.nav {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav .nav-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/**Navigator Settings ------->**/
+.nav{
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav .nav-section{
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav-section button{
+  margin: 0px;
+}
+
+/**SideBar Settings-------->**/
+#sidebar{
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  background-color: #595757;
+  translate: -375px;
+  transition: translate 1s;
+  z-index: 5;
+}
+
+
+.sidebarstyle {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+}
+ .sidebarstyle p {
+ border-top: 2px solid white;
+ padding: 20px;
+ width: -webkit-fill-available;
+ margin-top: 0;
+}
+
+.sb-dropdown {
+ border-top: 2px solid white;
+ padding: 20px;
+ width: -webkit-fill-available;
+ margin-top: 0;
+}
+
+
+.sidebarstyle a {
+ font-size: 21px;
+ font-weight: 500;
+}
+
+.sidebarstyle .sidebar-dropdown a {
+ font-size: 15px;
+ font-weight: 500;
+}
+
+.sidebarstyle a:hover {
+ color: black;
+}
+
+.content .sidebarstyle p:first-of-type {
+ border: none;
+}
+
+.menu .menu-opt img {
+ width: 10px;
+ height: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3e3e3e;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 767.9px){
+ .menu {
+  display: none;
+ }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023.9px) {
+ .menu {
+  display: none;
+ }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439.9px) {
+  .burguer-icon{
+   display: none;
+  }
+  #sidebar {
+   display: none;
+  }
+  .menu {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+   width: 500px;
+  }
+  .menu-opt:hover{
+   color: #fd7e14;
+   transition: all 0.3s linear 0.1s;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+ .burguer-icon{
+  display: none;
+ }
+ #sidebar {
+  display: none;
+ }
+ .menu {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 500px;
+ }
+ .menu-opt:hover{
+  color: #fd7e14;
+  transition: all 0.3s linear 0.1s;
+ }
+}

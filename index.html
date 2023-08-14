@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exam</title>
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <link rel="stylesheet" type="text/css" href="./css/stylesnavbar.css">
+  <link rel="stylesheet" type="text/css" href="./css/styleheader.css">
+  <link rel="stylesheet" type="text/css" href="./css/stylerooms.css">
+  <link rel="stylesheet" type="text/css" href="./css/stylecheck.css">
+  <link rel="stylesheet" type="text/css" href="./css/styleabout.css">
+  <link rel="stylesheet" type="text/css" href="./css/styleservices.css">
+  <link rel="stylesheet" type="text/css" href="./css/stylevideo.css">
+  <link rel="stylesheet" type="text/css" href="./css/stylefacilities.css">
+  <link rel="stylesheet" type="text/css" href="./css/styletestimonies.css">
+  <link rel="stylesheet" type="text/css" href="./css/stylegallery.css">
+  <link rel="stylesheet" type="text/css" href="./css/stylefooter.css">
+  <script type="text/javascript" src="./js/script.js"></script>
+</head>
+<body onload="start()">
+
+ <div id="sidebar" style="translate: -100%;">
+    <div class="sidebarstyle">
+      <div class="logo">
+       <img src="./imgs/logo.png" alt="logo">
+      </div>
+      <p><a href="">Menu</a></p>
+      <p><a href="">Home</a></p>
+      <p><a href="">About</a></p>
+      <p><a href="">Room</a></p>
+      <p><a href="">Restaurant</a></p>
+      <p><a href="">Gallery</a></p>
+      <p><a href="">Blog</a></p>
+      <p><a href="">Contact</a></p>
+    </div>
+</div>
+
+ <div class="bg-gray">
+    <div class="nav">
+      <div class="logo">
+       <img src="./imgs/logo.png" alt="logo">
+      </div>
+         <!--Nav section Starts-->
+      <div class="nav-section">
+
+
+     <button onclick="sidebar(true)" class="burguer-icon">
+       <img src="./icons/burguer-menu.png">
+     </button>
+     <div class="menu">
+      <div class="menu-opt dropdown"><span>Home <img src="./icons/angle-down.png" alt="angle down"></span>
+       <div class="dropdown-content">
+         <a href="#">Home 1</a>
+         <a href="#">Home 2</a>
+       </div>
+      </div>
+      <div class="menu-opt"><span>About</span></div>
+      <div class="menu-opt dropdown"><span>Room <img src="./icons/angle-down.png" alt="angle down"></span>
+       <div class="dropdown-content">
+         <a href="#">Room 1</a>
+         <a href="#">Room 2</a>
+         <a href="#">Room Details</a>
+       </div>
+      </div>
+      <div class="menu-opt"><span>Restaurant</span></div>
+      <div class="menu-opt"><span>Gallery</span></div>
+      <div class="menu-opt dropdown"><span>Blog <img src="./icons/angle-down.png" alt="angle down"></span>
+       <div class="dropdown-content">
+         <a href="#">Blog</a>
+         <a href="#">Blog Details</a>
+       </div>
+      </div>
+      <div class="menu-opt"><span>Contact</span></div>
+     </div>
+    </div>
+   </div>
+ </div>
+
+  <div class="container bg-image">
+    <div class="content textblock">
+      <h1>Spend Your Dream  <span id="title">Holidays</span></h1>
+      <p>Book a room at our resort now and get a discount of 30%. Fruit basket,
+       soft drinks and a huge cozy bed are waiting for you.
+       We will do everything to make you feel at home.</p>
+      <button class="golden-btn large-btn"><span>Shop Now</span></button>
+      <button class="golden-nbg-btn large-btn"><span>Shop Now</span></button>
+    </div>
+  </div>
+
+
+  <div class="container bg-gray">
+    <div class="checking content">
+     <div class="check-title">
+       <img src="./icons/approved.png" alt="approved">
+       <h4>CHECK AVAILABILITY</h4>
+     </div>
+
+     <form class="form-check">
+       <div class="form-group">
+          <input placeholder=" Arrival Date " class="form-control" type="text" onfocus="(this.type='date')" onblur="(this.type='text')">
+         </div>
+        <div class="form-group">
+        <input placeholder=" Departure Date " class="form-control" type="text" onfocus="(this.type='date')" onblur="(this.type='text')">
+       </div>
+       <div class="form-group">
+          <select class="form-select" aria-label="Default select example">
+             <option selected="">Adults</option>
+             <option value="1">1</option>
+             <option value="2">2</option>
+             <option value="3">3</option>
+          </select>
+         </div>
+         <div class="form-group">
+            <select class="form-select" aria-label="Default select example">
+               <option selected="">Children</option>
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+            </select>
+           </div>
+           <div class="form-group">
+           <button type="submit" class="button-bar">Booking</button>
+         </div>
+        </form>
+
+      </div>
+    </div>
+
+ <!--- Carousel 1 ------------------------------------------------------------------->
+ <div class="container bg-floral-white">
+  <div class="content">
+   <div class="cards-section">
+    <div class="header-title-facilities">
+     <h2>Rooms & Rates</h2>
+     <div class="head-title">
+         <div class="hl-1"></div>
+         <div class="hl-2"></div>
+         <div class="hl-3"></div>
+     </div>
+     <p>When you host a party or family reunion, the special celebrations let you streng then bonds with</p>
+     </div>
+       <div class="arrow">
+         <button class="nav-btn" onclick="carousel('left')"><img src="./icons/left-arrow.png" alt="Left Arrow"></button>
+         <button class="nav-btn" onclick="carousel('right')"><img src="./icons/right-arrow.png" alt="Right Arrow"></button>
+       </div>
+      </div>
+
+     <div class="carousel-container">
+          <!--carousel-->
+       <div id="carousel">
+         <!--Image-->
+         <div class="carousel-item">
+           <div class="image-carousel">
+             <img src="./imgs/rooms-1.jpg" alt="rooms-1">
+             <h2>Single Room</h2>
+             <span>$56.00 / PER NIGHT</span>
+           </div>
+         </div>
+         <!--Image-->
+         <div class="carousel-item">
+           <div class="image-carousel">
+             <img src="./imgs/rooms-2.jpg" alt="rooms-2">
+             <h2>Single Room</h2>
+             <span>$56.00 / PER NIGHT</span>
+           </div>
+         </div>
+         <!--Image-->
+         <div class="carousel-item">
+           <div class="image-carousel">
+             <img src="./imgs/rooms-3.jpg" alt="rooms-3">
+             <h2>Single Room</h2>
+             <span>$56.00 / PER NIGHT</span>
+           </div>
+
+         </div>
+         <!--Image-->
+         <div class="carousel-item">
+           <div class="image-carousel">
+             <img src="./imgs/rooms-4.jpg" alt="rooms-4">
+             <h2>Single Room</h2>
+             <span>$56.00 / PER NIGHT</span>
+           </div>
+         </div>
+         <!--Image-->
+         <div class="carousel-item">
+           <div class="image-carousel">
+             <img src="./imgs/rooms-5.jpg" alt="rooms-5">
+             <h2>Single Room</h2>
+             <span>$56.00 / PER NIGHT</span>
+           </div>
+         </div>
+       </div>
+      </div>
+     </div>
+     </div>
+
+
+
+
+    <div class="container">
+      <div class="content">
+        <div class="about">
+          <div class="image"><img src="./imgs/about.jpg" alt="about image"></div>
+          <div class="side-text">
+          <h2>Wellcome To Our 5 Star Hotel</h2>
+          <h3>Enjoy a 5Star Experience</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ratione,
+           obcaecati in voluptate, quam ipsa. Quod rem dolor, consequuntur odio, temporibus,
+           deserunt totam voluptate quos fugiat dignissimos ipsum adipisci veritatis.
+           Lorem ipsum dolor sit consectetur</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ratione,
+            obcaecati in voluptate, quam ipsa. Quod rem dolor, consequuntur odio, temporibus,
+            deserunt totam voluptate quos fugiat dignissimos ipsum adipisci veritatis.
+            Lorem ipsum dolor sit consectetur</p>
+          <div class="welcome-button">
+           <a href="#">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+
+
+    <div class="container bg-image-video">
+      <div class="content">
+        <h1>The Five Start Hotel</h1>
+        <p>Promotional Video</p>
+        <button class="play-btn">▶</button>
+      </div>
+    </div>
+
+    <!--- Carousel 2 ------------------------------------------------------------------->
+    <div class="container bg-floral-white">
+     <div class="content">
+      <div class="cards-section">
+       <div class="header-title-facilities">
+        <h2>Facilities & services</h2>
+        <div class="head-title">
+            <div class="hl-1"></div>
+            <div class="hl-2"></div>
+            <div class="hl-3"></div>
+        </div>
+        <p>When you host a party or family reunion, the special celebrations let you streng then bonds with</p>
+        </div>
+          <div class="arrow">
+            <button class="nav-btn" onclick="carousel2('left')"><img src="./icons/left-arrow.png" alt="Left Arrow"></button>
+            <button class="nav-btn" onclick="carousel2('right')"><img src="./icons/right-arrow.png" alt="Right Arrow"></button>
+          </div>
+         </div>
+        <div class="carousel2-container">
+             <!--carousel-->
+          <div id="carousel2">
+            <!--Image-->
+            <div class="carousel2-item">
+              <div class="image-carousel2">
+                <img src="./imgs/services1.jpeg" alt="services1">
+              </div>
+              <h2>Wedding</h2>
+              <span>EVENT</span>
+            </div>
+            <!--Image-->
+            <div class="carousel2-item">
+              <div class="image-carousel2">
+                <img src="./imgs/services2.jpeg" alt="services2">
+              </div>
+              <h2>Basketball</h2>
+              <span>EVENT</span>
+            </div>
+            <!--Image-->
+            <div class="carousel2-item">
+              <div class="image-carousel2">
+                <img src="./imgs/services3.jpeg" alt="services3">
+              </div>
+              <h2>Birthday</h2>
+              <span>EVENT</span>
+            </div>
+            <!--Image-->
+            <div class="carousel2-item">
+              <div class="image-carousel2">
+                <img src="./imgs/services4.jpeg" alt="services4">
+              </div>
+              <h2>celebration</h2>
+              <span>EVENT</span>
+            </div>
+            </div>
+          </div>
+         </div>
+        </div>
+       </div>
+
+
+
+    <div class="container bg-image-testimonials">
+      <div class="content">
+         <div class="header-title-testimonials">
+          <h2>Testimonials</h2>
+          <h3>What Clients Say?</h3>
+          <div class="head-title-testimonials">
+              <div class="hl-1-testimonials"></div>
+              <div class="hl-2-testimonials"></div>
+              <div class="hl-3-testimonials"></div>
+          </div>
+         </div>
+
+         <div class="testimonials-carousel">
+
+          <div class="testimonials">
+
+
+             <div class="testimonial">
+             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Sed lobortis odio ac eros sollicitudin consequat. Proin a tortor tortor.
+              Nullam consequat dictum metus in vulputate. Pellentesque congue lectus justo,
+              et.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis odio
+              ac eros sollicitudin consequat. Proin a tortor tortor. Nullam consequat dictum
+              metus in vulputate."</p>
+              <div class="authorTestimonial">
+                <img src="./imgs/author-1.jpeg" alt="author">
+                <div class="authorInfo">
+                 <div class="stars">
+                   <img src="./icons/star.png" alt="star">
+                   <img src="./icons/star.png" alt="star">
+                   <img src="./icons/star.png" alt="star">
+                   <img src="./icons/star.png" alt="star">
+                   <img src="./icons/star-empty.png" alt="star-empty">
+                 </div>
+                 <p class="authorName">Abdur Amin</p>
+                 <p class="authorRole">Guest-Review</p>
+                </div>
+              </div>
+             </div>
+            </div>
+          </div>
+         </div>
+
+        </div>
+
+  <div class="container bg-floral-white">
+    <div class="content">
+      <div class="cards-section">
+       <div class="header-title-facilities">
+        <h2>Facilities &amp; services</h2>
+        <div class="head-title">
+            <div class="hl-1"></div>
+            <div class="hl-2"></div>
+            <div class="hl-3"></div>
+        </div>
+        <p>When you host a party or family reunion, the special celebrations let you streng then bonds with</p>
+     </div>
+    </div>
+
+    <div class="cards-section">
+        <!--Large Card Starts-->
+        <div class="service-card">
+           <div class="service-img">
+             <img src="./icons/utensils.png" alt="utensils">
+             </div>
+             <h2>Delicious Food</h2>
+             <p>Wifi tincidunt nis ace park norttito sit amet space, mus nellentesque habitant.</p>
+        </div>
+        <!--Large Card Ends-->
+
+        <!--Large Card Starts-->
+        <div class="service-card">
+           <div class="service-img">
+             <img src="./icons/bed.png" alt="bed">
+             </div>
+             <h2>Delicious Food</h2>
+             <p>Wifi tincidunt nis ace park norttito sit amet space, mus nellentesque habitant.</p>
+        </div>
+        <!--Large Card Ends-->
+
+        <!--Large Card Starts-->
+        <div class="service-card">
+           <div class="service-img">
+             <img src="./icons/dumbbell.png" alt="dumbbell">
+             </div>
+             <h2>Delicious Food</h2>
+             <p>Wifi tincidunt nis ace park norttito sit amet space, mus nellentesque habitant.</p>
+        </div>
+        <!--Large Card Ends-->
+
+        <!--Large Card Starts-->
+        <div class="service-card">
+           <div class="service-img">
+             <img src="./icons/swimming.png" alt="swimming">
+             </div>
+             <h2>Delicious Food</h2>
+             <p>Wifi tincidunt nis ace park norttito sit amet space, mus nellentesque habitant.</p>
+        </div>
+        <!--Large Card Ends-->
+
+       <!--Large Card Starts-->
+        <div class="service-card">
+           <div class="service-img">
+             <img src="./icons/house.png" alt="house">
+             </div>
+             <h2>Delicious Food</h2>
+             <p>Wifi tincidunt nis ace park norttito sit amet space, mus nellentesque habitant.</p>
+        </div>
+        <!--Large Card Ends-->
+
+        <!--Large Card Starts-->
+        <div class="service-card">
+           <div class="service-img">
+             <img src="./icons/car.png" alt="car">
+             </div>
+             <h2>Delicious Food</h2>
+             <p>Wifi tincidunt nis ace park norttito sit amet space, mus nellentesque habitant.</p>
+        </div>
+        <!--Large Card Ends-->
+      </div>
+
+
+      <!--Cards Section Ends-->
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <div class="content">
+      <div class="cards-section">
+       <div class="header-title-facilities">
+        <h2>Facilities &amp; services</h2>
+        <div class="head-title">
+            <div class="hl-1"></div>
+            <div class="hl-2"></div>
+            <div class="hl-3"></div>
+        </div>
+        <p>When you host a party or family reunion, the special celebrations let you streng then bonds with</p>
+     </div>
+      </div>
+
+       <div class="gallery-nav">
+        <div class="gallery-nav-section">
+            <div class="gallery-opt" onclick="gallery(1)">All</div>
+            <div class="gallery-opt" onclick="gallery(2)">Room</div>
+            <div class="gallery-opt" onclick="gallery(3)">Swimming pool</div>
+            <div class="gallery-opt" onclick="gallery(4)">Chef</div>
+          </div>
+      </div>
+
+      <!--Cards Section Starts-->
+      <div class="cards-section">
+          <!--Image Card-->
+          <div class="hotel-area" id="g1">
+           <div class="content textblock">
+             <div class="hover-gallery">
+               <div class="magnifier">
+                 <a href="#"><img src="./icons/magnifier.png" alt="magnifier" class="magnifier-img"></a>
+               </div>
+               <p>Bedroom</p>
+             </div>
+           </div>
+           <div class="hotel-area-info">
+           </div>
+           <img src="./imgs/gallery-1.jpeg" alt="gallery photo" class="gallery-img">
+         </div>
+
+         <!--Image Card-->
+         <div class="hotel-area" id="g2">
+          <div class="content textblock">
+            <div class="hover-gallery">
+              <div class="magnifier">
+                <a href="#"><img src="./icons/magnifier.png" alt="magnifier" class="magnifier-img"></a>
+              </div>
+              <p>Bedroom</p>
+            </div>
+          </div>
+          <div class="hotel-area-info">
+          </div>
+          <img src="./imgs/gallery-2.jpeg" alt="gallery photo" class="gallery-img">
+        </div>
+
+        <!--Image Card-->
+        <div class="hotel-area" id="g3">
+         <div class="content textblock">
+           <div class="hover-gallery">
+             <div class="magnifier">
+               <a href="#"><img src="./icons/magnifier.png" alt="magnifier" class="magnifier-img"></a>
+             </div>
+             <p>Bedroom</p>
+           </div>
+         </div>
+         <div class="hotel-area-info">
+         </div>
+         <img src="./imgs/gallery-3.jpeg" alt="gallery photo" class="gallery-img">
+       </div>
+
+       <!--Image Card-->
+       <div class="hotel-area" id="g4">
+        <div class="content textblock">
+          <div class="hover-gallery">
+            <div class="magnifier">
+              <a href="#"><img src="./icons/magnifier.png" alt="magnifier" class="magnifier-img"></a>
+            </div>
+            <p>Bedroom</p>
+          </div>
+        </div>
+        <div class="hotel-area-info">
+        </div>
+        <img src="./imgs/gallery-4.jpeg" alt="gallery photo" class="gallery-img">
+      </div>
+
+      <!--Image Card-->
+      <div class="hotel-area" id="g5">
+       <div class="content textblock">
+         <div class="hover-gallery">
+           <div class="magnifier">
+             <a href="#"><img src="./icons/magnifier.png" alt="magnifier" class="magnifier-img"></a>
+           </div>
+           <p>Bedroom</p>
+         </div>
+       </div>
+       <div class="hotel-area-info">
+       </div>
+       <img src="./imgs/gallery-5.jpeg" alt="gallery photo" class="gallery-img">
+     </div>
+
+     <!--Image Card-->
+     <div class="hotel-area" id="g6">
+      <div class="content textblock">
+        <div class="hover-gallery">
+          <div class="magnifier">
+            <a href="#"><img src="./icons/magnifier.png" alt="magnifier" class="magnifier-img"></a>
+          </div>
+          <p>Bedroom</p>
+        </div>
+      </div>
+      <div class="hotel-area-info">
+      </div>
+      <img src="./imgs/gallery-6.jpeg" alt="gallery photo" class="gallery-img">
+    </div>
+
+      <!--Cards Section Ends-->
+    </div>
+  </div>
+  </div>
+
+
+
+  <div class="container bg-gray">
+    <div class="subscription content">
+      <div class="subscription-form">
+        <div class="envelope-icon">
+          <img src="./icons/envelope.png" alt="envelope">
+        </div>
+        <form class="form-email">
+          <input type="email" name="subscription" placeholder="Your Email">
+          <button id="subs-btn" class="small-btn">
+            <span class="vertical-line"></span>
+            <img src="./icons/paper-plane.svg" alt="paper plane" class="svg-icon">
+          </button>
+        </form>
+      </div>
+      <div class="subscription-links">
+        <a href="#"><img src="./icons/facebook.svg" alt="facebook" class="social-icon"></a>
+        <a href="#"><img src="./icons/youtube.svg" alt="youtube" class="social-icon"></a>
+        <a href="#"><img src="./icons/linkedin.svg" alt="linkedin" class="social-icon"></a>
+        <a href="#"><img src="./icons/twitter.svg" alt="twitter" class="social-icon"></a>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer" class="bg-black">
+      <div class="content">
+
+     <div class="info-links">
+
+       <div class="info textblock">
+        <div class="logo">
+         <img src="./imgs/logo.png" alt="logo">
+        </div>
+        <p class="ft-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odio error quidem distinctio,</p>
+        <div class="footer-language">
+         <select>
+             <option>English</option>
+             <option>German</option>
+         </select>
+        </div>
+       </div>
+
+        <div class="info textblock">
+          <h3>Quick Links</h3>
+          <ul>
+           <li><a href="#">About us</a></li>
+           <li><a href="#">Faq</a></li>
+           <li><a href="#">Help</a></li>
+           <li><a href="#">My account</a></li>
+           <li><a href="#">Blog</a></li>
+           <li><a href="#">Contact</a></li>
+         </ul>
+        </div>
+
+
+        <div class="info textblock">
+           <h3>Page site</h3>
+          <ul>
+            <li><a href="#">Restaurant</a></li>
+            <li><a href="#">Guest Book</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Coming Soon</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Event</a></li>
+          </ul>
+        </div>
+
+        <div class="info textblock">
+         <h3>Contact Info</h3>
+         <ul>
+          <li><a href="#">House no 35, Palmall street, London, England</a></li>
+          <li><a href="#" class="color-mountain-ash">Email:</a></li>
+          <li><a href="#">info@contact.com</a></li>
+          <li ><a href="#" class="color-mountain-ash">Support:</a></li>
+          <li><a href="#">+1 325 562 3265</a></li>
+         </ul>
+        </div>
+       </div>
+      </div>
+    </div>
+
+
+  <div class="small-container bg-black">
+    <div class="content textblock">
+     <div class="copyright">
+     <p>Copyright ©2022 5Star Hotel.Allright Recived</p>
+     <p><a href="#">Terms & Condition</a> | <a href="#">Privacy</a> | <a href="#">Support</a></p>
+    </div>
+    </div>
+    </div>
+ </body>
+ </html>

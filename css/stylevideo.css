@@ -1,0 +1,29 @@
+.bg-image-video {
+    background-image: linear-gradient(rgba(30, 30, 30, 0.8), rgba(30, 30, 30, 0.8)), url(../imgs/video.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+}
+
+.play-btn {
+ font-size: 30px;
+ font-weight: 700;
+ color: #AA8460;
+ border-radius: 50%;
+ width: 100px;
+ height: 100px;
+}
+
+.bg-image-video h1 {
+ font-family: sans-serif;
+ font-size: 30px;
+ font-weight: lighter;
+}
+
+
+.bg-image-video p {
+ font-family: 'Cherry Swash', cursive;
+ font-size: 40px;
+}

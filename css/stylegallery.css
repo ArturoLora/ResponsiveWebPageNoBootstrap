@@ -1,0 +1,136 @@
+.transition {
+ transition: all .5s linear;
+}
+
+* + .cards-section {
+ margin-top: 30px;
+}
+
+.hotel-area {
+    margin-top: 30px;
+}
+
+.hover-gallery {
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+}
+
+
+.magnifier {
+ border-radius: 50%;
+ background-color: white;
+ width: 40px;
+ height: 40px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.magnifier-img{
+ width: 20px;
+ height: 20px;
+}
+
+.hotel-area {
+    width: 315px;
+    height: 250px;
+    position: relative;
+}
+.hotel-area .content {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    display: none;
+    bottom: 100px;
+    left: 50%;
+    translate: -50%;
+}
+
+.hotel-area-info {
+    position: absolute;
+    background-color: rgb(134, 73, 19, 0.5);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+
+.hotel-area:hover .hotel-area-info, .hotel-area:hover .content {
+    display: initial;
+}
+
+
+
+* + .gallery-nav {
+ margin-top: 20px;
+}
+
+.gallery-nav {
+ display: flex;
+ justify-content: center;
+ font-weight: bold;
+}
+
+.gallery-nav-section {
+ display: flex;
+ justify-content: space-around;
+ width: 267px;
+}
+
+.gallery-opt a {
+ color: black;
+}
+
+@media screen and (max-width: 767.9px) {
+  .cards-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 313px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023.9px) {
+ .cards-section {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439.9px){
+   .cards-section {
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       flex-wrap: wrap;
+       justify-content: space-between;
+   }
+
+}
+
+@media screen and (min-width: 1440px) {
+ .cards-section {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     flex-wrap: wrap;
+     justify-content: space-between;
+ }
+
+ .hotel-area {
+     width: 316px;
+ }
+}

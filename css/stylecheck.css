@@ -1,0 +1,157 @@
+
+
+.check-title img {
+    display: inline-block;
+    height: 30px;
+    width: auto;
+}
+
+.check-title h4 {
+    display: inline-block;
+    color: white;
+    margin-left: 10px;
+}
+
+* + .form-check {
+ margin-top: 10px;
+}
+
+* + .form-group {
+ margin-top: 10px;
+}
+
+.form-group input {
+    width: 99%;
+    padding: 8px 0px;
+ }
+}
+
+.check-title form {
+ margin-top: 10px;
+}
+
+.form-select {
+ color: #757575;
+ width: 100%;
+ padding: 8px 0px;
+}
+
+.button-bar {
+    color: #fff;
+    background: #B18C57;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 4px;
+    box-shadow: none;
+    text-align: center;
+    display: block;
+}
+
+
+
+@media screen and (max-width: 767.9px){
+ .check-title {
+  display:flex;
+  align-items: center;
+ }
+
+ .form-check {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 300px;
+ }
+
+ .form-group {
+  width: 325px;
+ }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023.9px) {
+ .checking {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ }
+ .check-title {
+  display:flex;
+  align-items: center;
+ }
+
+ .form-check {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 670px;
+ }
+
+ .form-group {
+  width: 323px;
+ }
+
+ .form-group:nth-of-type(2){
+  margin-top: 0;
+ }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439.9px) {
+ .checking {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+ }
+
+ .check-title {
+  display:flex;
+  align-items: center;
+  order: 1;
+  text-align: left;
+ }
+
+ .form-check {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  order: 2;
+  width: 950px;
+ }
+
+ .form-group {
+  width: 143px;
+ }
+
+ * + .form-group {
+  margin-top: 0;
+ }
+}
+
+@media screen and (min-width: 1440px) {
+ .checking {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+ }
+ .check-title {
+  display:flex;
+  align-items: center;
+  order: 1;
+  text-align: left;
+ }
+
+ .form-check {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  order: 2;
+  width: 1250px;
+ }
+
+ .form-group {
+  width: 208px;
+ }
+
+ * + .form-group {
+  margin-top: 0;
+ }
+}

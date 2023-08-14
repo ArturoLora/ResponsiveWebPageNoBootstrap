@@ -1,0 +1,33 @@
+* + .service-card {
+ margin-top: 10px;
+}
+
+.service-card {
+ display: inline-block;
+ text-align: left;
+ padding: 30px 20px;
+ border: 1px solid #EEDEC7;
+ width: 277px;
+ height: 137px;
+}
+
+.service-card h2 {
+ font-family: sans-serif;
+ font-weight: lighter;
+ font-size: 22px;
+ margin-top: 10px;
+}
+
+.service-card p {
+ font-family: sans-serif;
+ margin-top: 10px;
+ font-size: 15px;
+ font-weight: 400;
+ line-height: 20px;
+ font-weight: lighter;
+}
+
+.service-img img{
+ width: 50px;
+ height: 50px;
+}
